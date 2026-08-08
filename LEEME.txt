@@ -1,0 +1,9 @@
+INSTRUCCIONES
+
+La invitación ya está configurada con el WhatsApp 6692774102.
+
+Al tocar "CONFIRMAR ASISTENCIA", se abrirá WhatsApp con un mensaje preparado para confirmar la asistencia a la fiesta.
+
+Archivos:
+- index.html
+- invitacion.png

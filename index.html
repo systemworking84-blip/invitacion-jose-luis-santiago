@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#35a900">
+  <title>Invitación | José Luis y Santiago</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #07100b;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .invitation {
+      position: relative;
+      width: min(100%, 720px);
+      line-height: 0;
+      overflow: hidden;
+      background: #07100b;
+    }
+    .invitation img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    /* Botón funcional sobre el botón dibujado de la invitación */
+    .confirmar {
+      position: absolute;
+      left: 13%;
+      width: 74%;
+      bottom: 2.2%;
+      height: 6.5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: transparent;
+      background: rgba(0,0,0,0);
+      border-radius: 60px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .confirmar:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 4px;
+    }
+    .fallback {
+      display: none;
+      line-height: 1.4;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main class="invitation">
+    <img src="invitacion.png" alt="Invitación de cumpleaños de José Luis y Santiago">
+    <a
+      id="confirmar"
+      class="confirmar"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Confirmar asistencia por WhatsApp">
+    </a>
+    <script src="config.js"></script>
+    <script>
+      const boton = document.getElementById("confirmar");
+      const texto = encodeURIComponent(WHATSAPP_MESSAGE);
+      boton.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + texto;
+    </script>
+  </main>
+</body>
+</html>

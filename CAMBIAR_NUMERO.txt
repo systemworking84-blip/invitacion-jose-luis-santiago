@@ -1,0 +1,14 @@
+CAMBIAR EL NÚMERO DE WHATSAPP
+
+1. Abre el archivo config.js.
+2. Busca:
+   const WHATSAPP_NUMBER = "526692774102";
+3. Sustituye SOLO el número entre comillas.
+4. Para México usa 52 + los 10 dígitos del celular, sin espacios ni signos.
+   Ejemplo: 526691234567
+5. Guarda config.js y vuelve a subir/reemplazar ese archivo en GitHub.
+6. El botón de la invitación usará automáticamente el nuevo número.
+
+IMPORTANTE:
+Cambiar el número en tu computadora NO cambia la invitación que ya está publicada.
+Debes guardar y publicar la nueva versión del archivo config.js.
